@@ -1,0 +1,35 @@
+﻿<Page x:Class="Homeless.Pages.Settings"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Homeless.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Settings">
+
+    <Grid>
+        <!--#region Что в меню?-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" >
+            <Menu Background="Wheat">
+                <MenuItem Header="Создать заказ" Height="20" Click="Order_Click" Background="#FBF6E4"/>
+                <!--Бедра испуганной нимфы-->
+                <MenuItem Header="Продукт" Click="Product_Click" Background="#FDF9ED" />
+                <!--Старое кружево-->
+                <MenuItem Header="Материалы" Click="Material_Click" Background="#FDF9ED" />
+                <!--Старое кружево-->
+                <MenuItem Header="Клиенты" Click="Client_Click" Background="#FDF9ED" />
+                <!--Старое кружево-->
+                <MenuItem Header="Потеряшки" Click="LostSoul_Click" Background="#FDF9ED" />
+                <!--Старое кружево-->
+                <MenuItem Header="На стройке" Click="Settings_Click" Background="#FDF9ED" />
+                <!--Старое кружево-->
+            </Menu>
+        </StackPanel>
+        <!--#Endregion-->
+    </Grid>
+</Page>
